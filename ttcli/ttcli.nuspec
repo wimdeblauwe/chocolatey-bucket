@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated with JReleaser 1.5.1 at 2023-05-09T19:46:16.938492206Z -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- required -->
+    <id>ttcli</id>
+    <version>0.9.2</version>
+    <authors>Spring</authors>
+    <description>CLI interface to make working with Thymeleaf projects easier</description>
+    <!-- optional -->
+    <title>ttcli</title>
+    <projectUrl>https://spring.io/projects/spring-boot/ttcli</projectUrl>
+    <copyright>2022 Spring</copyright>
+    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags></tags>
+    <summary>CLI interface to make working with Thymeleaf projects easier</summary>
+    <projectSourceUrl>https://github.com/wimdeblauwe/ttcli</projectSourceUrl>
+    <packageSourceUrl>https://github.com/wimdeblauwe/chocolatey-bucket</packageSourceUrl>
+    <docsUrl>https://spring.io/projects/spring-boot/ttcli</docsUrl>
+    <bugTrackerUrl>https://github.com/wimdeblauwe/ttcli/issues</bugTrackerUrl>
+    <releaseNotes>https://github.com/wimdeblauwe/ttcli/releases/tag/0.9.2</releaseNotes>
+    
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
