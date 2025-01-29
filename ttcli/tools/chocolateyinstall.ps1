@@ -1,10 +1,10 @@
-# Generated with JReleaser 1.16.0 at 2025-01-23T10:21:10.91551411Z
+# Generated with JReleaser 1.16.0 at 2025-01-29T08:25:37.938311892Z
 $tools = Split-Path $MyInvocation.MyCommand.Definition
 $package = Split-Path $tools
 
 Install-ChocolateyZipPackage `
     -PackageName 'ttcli' `
-    -Url 'https://github.com/wimdeblauwe/ttcli/releases/download/1.6.3/ttcli-1.6.3-windows-x86_64.zip' `
-    -Checksum '08a33ccc89cc83d654ac652293795d47431a46334508efe0078cfa715dd85940' `
+    -Url 'https://github.com/wimdeblauwe/ttcli/releases/download/1.7.0/ttcli-1.7.0-windows-x86_64.zip' `
+    -Checksum 'f15929dde6d429175b4eef2938699b170892de58109fc5dcf05e88d28fcc27f1' `
     -ChecksumType 'sha256' `
     -UnzipLocation $package
