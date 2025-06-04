@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generated with JReleaser 1.16.0 at 2025-02-21T21:59:53.265573667Z -->
+<!-- Generated with JReleaser 1.18.0 at 2025-06-04T18:45:46.936199056Z -->
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <!-- required -->
     <id>ttcli</id>
-    <version>1.8.0</version>
+    <version>1.9.0</version>
     <authors>Wim Deblauwe</authors>
     <description>CLI interface to make working with Thymeleaf projects easier</description>
     <!-- optional -->
@@ -20,7 +20,7 @@
     <packageSourceUrl>https://github.com/wimdeblauwe/chocolatey-bucket</packageSourceUrl>
     <docsUrl>https://github.com/wimdeblauwe/ttcli</docsUrl>
     <bugTrackerUrl>https://github.com/wimdeblauwe/ttcli/issues</bugTrackerUrl>
-    <releaseNotes>https://github.com/wimdeblauwe/ttcli/releases/tag/1.8.0</releaseNotes>
+    <releaseNotes>https://github.com/wimdeblauwe/ttcli/releases/tag/1.9.0</releaseNotes>
     
   </metadata>
   <files>
