@@ -3,29 +3,14 @@ name: Trigger-ttcli
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   trigger:
-    runs-on: windows-latest
-    
-    steps:
-      - uses: actions/checkout@v4
-      
-      - uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '5.0.x'
-
-      - name: Find package
-        shell: bash
-        run: |
-          echo "PACKAGE_NAME=$(ls ttcli/*.nuspec)" >> $GITHUB_ENV
-
-      - name: Pack
-        shell: powershell
-        run: |
-          choco pack ${{ env.PACKAGE_NAME }}
-
-      - name: Publish
-        shell: powershell
-        run: |
-          choco apikey -k ${{ secrets.CHOCOLATEY_API_KEY }} -s https://push.chocolatey.org/
-          choco push $(ls *.nupkg | % {$_.FullName}) -s https://push.chocolatey.org/
+    uses: ./.github/workflows/choco.yml@main
+    with:
+      choco-package-name: ttcli
+      choco-source: https://push.chocolatey.org/
+    secrets:
+      choco-api-key: ${{ secrets.CHOCOLATEY_API_KEY }}
