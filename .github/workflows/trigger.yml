@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   trigger:
-    uses: ./.github/workflows/choco.yml@main
+    uses: ./.github/workflows/choco.yml
     with:
       choco-package-name: ttcli
       choco-source: https://push.chocolatey.org/
